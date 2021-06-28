@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pwbg"
+    tools:context=".Register">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="39dp"
+        android:layout_height="37dp"
+        android:background="#009C27B0"
+        android:indeterminateTint="#9C27B0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="365dp"
+        android:layout_height="254dp"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557">
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/dark_border"
+            android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingTop="20sp"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#959C27B0" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/dark_border"
+            android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingTop="20sp"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHighlight="#94000000"
+            android:textColorHint="#8B9C27B0" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/dark_border"
+            android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:paddingTop="20sp"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHighlight="#9C000000"
+            android:textColorHint="#949C27B0" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/dark_border"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="20sp"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHighlight="#99000000"
+            android:textColorHint="#909C27B0" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="158dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/jacques_francois"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jacques_francois"
+        android:text="Already Registered? Login here!"
+        android:textColor="#9C27B0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.511" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

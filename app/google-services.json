@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1054839867694",
+    "project_id": "thriftone-fec2a",
+    "storage_bucket": "thriftone-fec2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054839867694:android:914f7e4d230f6eb3c252bf",
+        "android_client_info": {
+          "package_name": "com.mad.thriftone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054839867694-3cghclm34gbegutderjilon1sa42i8c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnt6sM3mT5MPwaU9-wddc7y8j0KvZx5UU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054839867694-3cghclm34gbegutderjilon1sa42i8c2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
