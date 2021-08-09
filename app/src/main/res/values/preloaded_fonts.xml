@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
-        <item>@font/corben</item>
-        <item>@font/jacques_francois</item>
+        <item>@font/lato</item>
+        <item>@font/lato_black</item>
+        <item>@font/lato_blackk</item>
+        <item>@font/lato_bold</item>
+        <item>@font/lato_reg</item>
+        <item>@font/tenor_sans</item>
     </array>
 </resources>

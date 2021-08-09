@@ -3,45 +3,49 @@ package com.mad.thriftone;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.VideoView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Button mLoginBtn1,mRegBtn1;
+   VideoView vv;
+   Handler hh=new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //mRegBtn1=findViewById(R.id.RegBtn);
-        //mLoginBtn1=findViewById(R.id.LogBtn);
+        VideoView vv =findViewById(R.id.videoViewlogo);
+        vv.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.splashvid));
+        vv.start(); // start a video
 
-        /*mRegBtn1.setOnClickListener(new View.OnClickListener() {
+        vv.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Register.class));
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
             }
         });
 
-        mLoginBtn1.setOnClickListener(new View.OnClickListener() {
+        hh.postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Register.class));
+            public void run() {
+
+                Intent i=new Intent(MainActivity.this,Intro.class);
+                startActivity(i);
+                finish();
+
             }
-        });*/
+        },5000);
 
-    }
-
-    public void logout(View view){
-        FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(getApplicationContext(),Login.class));
-        finish();
-    }
+}
 
 
 

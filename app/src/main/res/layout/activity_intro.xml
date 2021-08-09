@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/introbanner"
+    tools:context=".Intro">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goldcard"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="28dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/goldbtn"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:background="@drawable/gold"
+            android:fontFamily="@font/tenor_sans"
+            android:text="Get Started"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textFontWeight="900"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

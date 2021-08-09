@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orchid"
+    tools:context=".Settings">
+
+
+    <TextView
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/lato_reg"
+        android:text="Settings"
+        android:textColor="@color/purple"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logouttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:fontFamily="@font/lato_reg"
+        android:text="Wanna Come Out?"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goldcard"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logouttxt">
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:background="@color/purple"
+            android:fontFamily="@font/tenor_sans"
+            android:text="LogOut"
+            android:onClick="logout"
+            android:clickable="true"
+            android:textColor="@color/orchid"
+            android:textFontWeight="900"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

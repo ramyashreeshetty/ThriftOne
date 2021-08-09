@@ -22,8 +22,7 @@ public class Login extends AppCompatActivity {
 
 
     EditText mEmail,mPassword;
-    Button mLoginBtn;
-    TextView mCreateBtn;
+    Button mLoginBtn,reghere;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
 
@@ -34,7 +33,7 @@ public class Login extends AppCompatActivity {
 
         mEmail= findViewById(R.id.Email);
         mPassword=findViewById(R.id.password);
-        mCreateBtn=findViewById(R.id.createText1);
+        reghere=findViewById(R.id.reghere);
         mLoginBtn=findViewById(R.id.loginBtn);
 
         fAuth=FirebaseAuth.getInstance();
@@ -72,7 +71,7 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(Login.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(),Home.class));
                         }
                         else{
                             Toast.makeText(Login.this, "Error!"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -83,10 +82,13 @@ public class Login extends AppCompatActivity {
 
             }
         });
-        mCreateBtn.setOnClickListener(new View.OnClickListener() {
+
+        reghere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Register.class));
+                Intent intent=new Intent(Login.this,Register.class);
+                Toast.makeText(Login.this, "registeringgggg", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
             }
         });
     }

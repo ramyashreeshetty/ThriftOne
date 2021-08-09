@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ThriftOne</string>
+    <string name="thriftone">ThriftOne</string>
+    <string name="offers">Offers</string>
+    <string name="category">Category</string>
+    <string name="find_the_best_items_from_our_curated_thrift_shops">Find the best items from our curated thrift shops!</string>
 </resources>
